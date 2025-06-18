@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
@@ -170,7 +171,7 @@
         <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" title="PHP">
       </div>
       <div class="tech-logo" style="top: 75%; left: 10%;" id="logo5">
-        <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" title="SQL">
+        <img src="https://files.catbox.moe/xm0r9r.jpg" title="SQL">
       </div>
       <div class="tech-logo" style="top: 25%; left: 10%;" id="logo6">
         <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" title="C++">
