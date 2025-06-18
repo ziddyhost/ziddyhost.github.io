@@ -243,3 +243,6 @@
       logoShown = !logoShown;
     }
   </script>
+
+</body>
+</html>
