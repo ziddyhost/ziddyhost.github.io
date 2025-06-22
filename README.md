@@ -170,7 +170,7 @@
         <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" title="PHP">
       </div>
       <div class="tech-logo" style="top: 75%; left: 10%;" id="logo5">
-        <img src="https://files.catbox.moe/xm0r9r.jpg" title="SQL">
+        <img src="https://cdn-icons-png.flaticon.com/512/4248/4248443.png" title="SQL">
       </div>
       <div class="tech-logo" style="top: 25%; left: 10%;" id="logo6">
         <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" title="C++">
@@ -217,6 +217,23 @@
       <a href="https://files.catbox.moe/m75znz.png" target="_blank">PENCET UNTUK KE QRIS ALL PAY</a>
       <div class="product-desc">PENCET SAJA</div>
     </div>
+    
+      <div class="product">
+      <a href="https://wa.me/6282258021692?text=+mau+buy+sc+IMPROVE+yang+ori" target="_blank">SC IMPROVE ORI</a>
+      <div class="product-desc">SC YG UDH MENGGUNAKAN FUNC FC TERBARU</div>
+    </div>
+    
+  <div class="product">
+      <a href="https://wa.me/6282258021692?text=+mau+join+reseller+sc+improve" target="_blank">RESS IMPROVE</a>
+      <div class="product-desc">BISA OPEN RESS IMPROVE ATAU JUAL SC NYA</div>
+      </div>
+      
+      <div class="product">
+      <a href="https://wa.me/6282258021692?text=+mau+join+murnokos+bang" target="_blank">MURNOKOS 3K</a>
+      <div class="product-desc">DAPET BANYAK WEB NOKOS+APK NOKOS</div>
+      </div>
+      
+      <h3>PENCET NAMA PRODUK UNTUK MENUJU KELINK PEMBELIAN</h3>
 
     <!-- Sosial Media -->
     <div class="social-media">
