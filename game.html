@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Form UI Aman</title>
+  <style>
+    body {
+      background: url('https://files.catbox.moe/27ey60.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+      margin: 0;
+    }
+
+    .container {
+      background: rgba(26, 26, 26, 0.9);
+      border: 2px solid #8e2de2;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 20px #8e2de2;
+      width: 300px;
+      position: relative;
+    }
+
+    .profile-pic {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #8e2de2;
+      margin-bottom: 10px;
+      object-fit: cover;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
+      border: none;
+      margin-bottom: 20px;
+      background: #333;
+      color: #fff;
+    }
+
+    button {
+      background-color: #6c44f1;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #8e2de2;
+    }
+
+    .message {
+      margin-top: 15px;
+      color: #00ff88;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .message.show {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://files.catbox.moe/xm0r9r.jpg" alt="Foto Profil" class="profile-pic">
+    <h2>X - SYAKAUH</h2>
+    <input type="text" id="targetNumber" placeholder="Masukkan nomor (62xxxx)" onclick="playInputSound()">
+    <br>
+    <button onclick="showSuccess()">ziddy fc</button>
+    <button onclick="showSuccess()">bantai mark</button>
+    <button onclick="showSuccess()">x - crash</button>
+    <br><br>
+    <button onclick="openWhatsApp()">Support</button>
+    
+    <div id="successMessage" class="message">Success Bug By Ziddy Mods!</div>
+
+    <!-- Suara saat klik input -->
+    <audio id="inputSound" src="audio.mp3" preload="auto"></audio>
+  </div>
+  
+  <script>
+    function showSuccess() {
+      const msg = document.getElementById('successMessage');
+      msg.classList.add('show');
+      setTimeout(() => {
+        msg.classList.remove('show');
+      }, 2000);
+    }
+
+    function openWhatsApp() {
+      const nomor = "6282258021692"; // Ganti dengan nomor yang kamu tuju
+      window.open(`https://wa.me/${nomor}`, '_blank');
+    }
+
+    function playInputSound() {
+      const audio = document.getElementById("inputSound");
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
