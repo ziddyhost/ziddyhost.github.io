@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Love Heart Animation</title>
+  <style>
+    body {
+      margin: 0;
+      background: #0a0a1a;
+      overflow: hidden;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .heart-container {
+      position: relative;
+      width: 600px;
+      height: 600px;
+    }
+
+    .text {
+      position: absolute;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: #ff69b4;
+      text-shadow: 
+        0 0 5px #ff69b4,
+        0 0 10px #ff1493,
+        0 0 15px #ff1493,
+        0 0 20px #ff69b4;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+    }
+  </style>
+</head>
+<body>
+  <div class="heart-container" id="heartContainer"></div>
+
+  <script>
+    const container = document.getElementById('heartContainer');
+    const points = 70; // dikurangi supaya tidak terlalu padat
+    const spans = [];
+
+    for (let i = 0; i < points; i++) {
+      const span = document.createElement('span');
+      span.className = 'text';
+      span.textContent = "EVELYN🎀";
+      container.appendChild(span);
+      spans.push({ el: span, angle: i * (2 * Math.PI / points) });
+    }
+
+    function animate(time) {
+      spans.forEach((item, i) => {
+        const t = item.angle;
+        const wave = Math.sin(time / 400 + i * 0.3) * 3;
+
+        const x = 16 * Math.pow(Math.sin(t), 3);
+        const y = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
+
+        item.el.style.left = `${300 + x * 15}px`;
+        item.el.style.top = `${300 - (y * 15 + wave)}px`;
+      });
+
+      requestAnimationFrame(animate);
+    }
+
+    requestAnimationFrame(animate);
+  </script>
+</body>
+</html>
